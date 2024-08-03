@@ -53,8 +53,8 @@
 .card-img-top {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 300px; /* Limita el ancho máximo de la imagen */
-    max-height: 300px; /* Limita la altura máxima de la imagen */
+    max-width: 200px; /* Limita el ancho máximo de la imagen */
+    max-height: 200px; /* Limita la altura máxima de la imagen */
     object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
     margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
