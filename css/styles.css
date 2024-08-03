@@ -77,3 +77,24 @@
     box-shadow: 0 8px 16px rgba(214, 141, 30, 0.651); /* Sombra adicional igual en los cuatro lados */
 }
 
+/*Icono whatsapp*/
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior de la página */
+    right: 20px; /* Ajusta la distancia desde la parte derecha de la página */
+    z-index: 1000; /* Asegura que el ícono esté por encima de otros elementos */
+    border-radius: 50%; /* Asegura que el ícono sea redondo */
+    background-color: #25D366; /* Fondo verde característico de WhatsApp */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de flotación */
+    transition: transform 0.3s ease-in-out; /* Efecto de animación para el "latido" */
+}
+
+.whatsapp-float img {
+    width: 50px; /* Ajusta el tamaño del ícono */
+    height: auto;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Efecto de "latido" al pasar el cursor sobre el ícono */
+}
