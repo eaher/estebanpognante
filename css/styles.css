@@ -170,7 +170,6 @@
     }
 }
 
-
 /* Estilos para la sección de equipo */
 #equipo {
     padding: 100px;
@@ -186,8 +185,10 @@
 
 .overlay-content {
     position: absolute;
-    bottom: -40px;  /* Ajusta este valor para mover el recuadro blanco hacia abajo */
-    right: -10px;   /* Ajusta este valor para mover el recuadro blanco hacia la derecha */
+    bottom: -40px;
+    /* Ajusta este valor para mover el recuadro blanco hacia abajo */
+    right: -10px;
+    /* Ajusta este valor para mover el recuadro blanco hacia la derecha */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     /* Ajusta el padding según sea necesario */
@@ -208,7 +209,15 @@
     /* Sombra adicional igual en los cuatro lados */
 }
 
-/* Media query para dispositivos pequeños */
+/* Ajustar el espaciado entre tarjetas en equipo usando Bootstrap */
+@media (min-width: 768px) {
+    #equipo .row-cols-md-3 > * {
+        margin-bottom: 30px;
+        /* Ajusta este valor según el espaciado que prefieras */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .cardEq {
         position: relative;
@@ -242,4 +251,14 @@
         text-align: right;
         /* Alinea el texto a la derecha en pantallas pequeñas */
     }
+}
+
+/* Asegurar que la imagen de la tarjeta en equipo se muestre completa */
+.cardEq .card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 400px;
+    object-fit: contain;
+    /* Cambiado a contain para que la imagen no se corte */
 }
