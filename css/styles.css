@@ -10,7 +10,8 @@
 }
 
 .text-container p {
-    margin-bottom: 50px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 50px;
+    /* Ajusta este valor según sea necesario */
 }
 
 /* Si necesitas ajustar el alto del contenedor de imagen */
@@ -29,98 +30,152 @@
 /* Texto sección servicios */
 .text-containerS {
     width: 100%;
-    background: none; /* Asegura que no haya fondo adicional */
-    padding: 10px; /* Ajusta el padding según sea necesario */
+    background: none;
+    /* Asegura que no haya fondo adicional */
+    padding: 10px;
+    /* Ajusta el padding según sea necesario */
     text-align: left;
     box-sizing: border-box;
 }
 
 .text-containerS h2 {
     font-weight: bold;
-    margin-bottom: 10px; /* Margen inferior para el h2 */
+    margin-bottom: 10px;
+    /* Margen inferior para el h2 */
 }
 
 .text-containerS p {
-    margin-bottom: 30px; /* Margen inferior para el párrafo */
+    margin-bottom: 30px;
+    /* Margen inferior para el párrafo */
 }
 
 /* Estilo base para las tarjetas */
-.card, .whatsapp-float {
+.card,
+.whatsapp-float {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card {
-    border: 2px solid transparent; /* Borde transparente inicialmente */
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    border: 2px solid transparent;
+    /* Borde transparente inicialmente */
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Transición suave */
 }
 
 .card-img-top {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 300px; /* Limita el ancho máximo de la imagen */
-    max-height: 400px; /* Limita la altura máxima de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
-    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    max-width: 300px;
+    /* Limita el ancho máximo de la imagen */
+    max-height: 400px;
+    /* Limita la altura máxima de la imagen */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    margin: 0 auto;
+    /* Centra la imagen dentro del contenedor */
 }
 
 .card-body {
-    text-align: center; /* Centra el contenido dentro de la tarjeta */
-    padding: 10px; /* Reduce el padding dentro de la tarjeta */
+    text-align: center;
+    /* Centra el contenido dentro de la tarjeta */
+    padding: 10px;
+    /* Reduce el padding dentro de la tarjeta */
 }
 
 .card-title {
-    font-weight: bold; /* Asegura que el título esté en negrita */
-    color: #333; /* Asegura que haya un buen contraste con el fondo */
+    font-weight: bold;
+    /* Asegura que el título esté en negrita */
+    color: #333;
+    /* Asegura que haya un buen contraste con el fondo */
 }
 
 .card-text {
-    font-size: 1rem; /* Tamaño del texto */
-    color: #555; /* Contraste suficiente con el fondo */
+    font-size: 1rem;
+    /* Tamaño del texto */
+    color: #555;
+    /* Contraste suficiente con el fondo */
 }
 
 /* Efecto de latido al pasar el cursor */
 .card:hover {
-    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
-    box-shadow: 0 8px 16px rgba(214, 141, 30, 0.651); /* Sombra adicional igual en los cuatro lados */
+    transform: scale(1.05);
+    /* Aumenta el tamaño de la tarjeta */
+    box-shadow: 0 8px 16px rgba(214, 141, 30, 0.651);
+    /* Sombra adicional igual en los cuatro lados */
 }
 
-/* Icono WhatsApp */
+/* Icono WhatsApp flotante */
+.whatsapp-float {
+    position: fixed;
+    /* Posición fija para que flote en la pantalla */
+    bottom: 15px;
+    /* Espaciado desde la parte inferior */
+    right: 15px;
+    /* Espaciado desde la derecha */
+    width: 60px;
+    /* Tamaño del ícono, ajustable según necesidad */
+    height: 60px;
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+    transition: transform 0.3s ease-in-out;
+    /* Transición suave para el latido */
+}
+
+.whatsapp-float img {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el contenedor */
+    height: 100%;
+    /* Mantiene la proporción de la imagen */
+    object-fit: contain;
+    /* Asegura que la imagen se ajuste bien */
+}
+
+/* Efecto de latido al pasar el cursor */
+.whatsapp-float:hover {
+    animation: heartbeat 1s infinite;
+    /* Aplica la animación de latido */
+}
+
+/* Definición de la animación de latido */
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 576px) {
     .whatsapp-float {
         bottom: 15px;
         right: 15px;
-        width: 40px; /* Ajustar tamaño en pantallas pequeñas */
-    }
-
-    .whatsapp-float img {
         width: 40px;
-    }
-
-    .card {
-        margin: 0 auto; /* Centra la tarjeta dentro del contenedor */
-        max-width: 90%; /* Limita el ancho máximo de la tarjeta en pantallas pequeñas */
-    }
-
-    .card-img-top {
-        max-width: 120px; /* Reducir tamaño máximo de imagen en pantallas pequeñas */
-        max-height: 120px;
-    }
-
-    .card-body {
-        padding: 8px; /* Reducir padding en el cuerpo de la tarjeta */
-    }
-
-    .card-title {
-        font-size: 0.875rem; /* Reducir tamaño del título en pantallas pequeñas */
-    }
-
-    .card-text {
-        font-size: 0.75rem; /* Reducir tamaño del texto en pantallas pequeñas */
+        /* Tamaño del ícono más pequeño en pantallas pequeñas */
+        height: 40px;
     }
 }
 
-/* Estilos para la sección de equipo */
 
+/* Estilos para la sección de equipo */
+#equipo {
+    padding: 100px;
+    /* Ajusta el margen inferior para separarse más de la sección de clientes */
+}
 
 .card-img-overlay {
     bottom: 0;
@@ -131,22 +186,26 @@
 
 .overlay-content {
     position: absolute;
-    bottom: -60px; /* Ajusta este valor para mover el recuadro blanco hacia abajo */
-    right: -20px; /* Ajusta este valor para mover el recuadro blanco hacia la derecha */
+    bottom: -40px;  /* Ajusta este valor para mover el recuadro blanco hacia abajo */
+    right: -10px;   /* Ajusta este valor para mover el recuadro blanco hacia la derecha */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px; /* Ajusta el padding según sea necesario */
+    padding: 10px;
+    /* Ajusta el padding según sea necesario */
 }
 
 /* Estilo específico para el contenido dentro del recuadro blanco */
 .overlay-content h5,
 .overlay-content p {
-    text-align: right; /* Alinea el texto a la derecha */
+    text-align: right;
+    /* Alinea el texto a la derecha */
 }
 
 /* Efecto de latido al pasar el cursor */
 .cardEq:hover {
-    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.651); /* Sombra adicional igual en los cuatro lados */
+    transform: scale(1.05);
+    /* Aumenta el tamaño de la tarjeta */
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.651);
+    /* Sombra adicional igual en los cuatro lados */
 }
 
 /* Media query para dispositivos pequeños */
@@ -156,23 +215,31 @@
     }
 
     .card-img-top {
-        max-height: 300px; /* Limita la altura máxima de la imagen en dispositivos pequeños */
+        max-height: 300px;
+        /* Limita la altura máxima de la imagen en dispositivos pequeños */
     }
 
     .card-img-overlay {
-        position: static; /* Cambia la posición del overlay para que esté debajo de la imagen */
-        background: none; /* Elimina el fondo si es necesario */
+        position: static;
+        /* Cambia la posición del overlay para que esté debajo de la imagen */
+        background: none;
+        /* Elimina el fondo si es necesario */
     }
 
     .overlay-content {
-        position: static; /* El recuadro blanco se coloca debajo de la imagen */
-        box-shadow: none; /* Elimina la sombra del recuadro */
-        margin-top: 0; /* Elimina el margen superior para que no haya espacio extra */
-        text-align: right; /* Alinea el texto a la derecha en pantallas pequeñas */
+        position: static;
+        /* El recuadro blanco se coloca debajo de la imagen */
+        box-shadow: none;
+        /* Elimina la sombra del recuadro */
+        margin-top: 0;
+        /* Elimina el margen superior para que no haya espacio extra */
+        text-align: right;
+        /* Alinea el texto a la derecha en pantallas pequeñas */
     }
 
     .overlay-content h5,
     .overlay-content p {
-        text-align: right; /* Alinea el texto a la derecha en pantallas pequeñas */
+        text-align: right;
+        /* Alinea el texto a la derecha en pantallas pequeñas */
     }
 }
