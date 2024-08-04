@@ -1,6 +1,4 @@
-/* styles.css */
-
-/*Texto secciones*/
+/* Texto secciones */
 .text-container {
     background: white;
     text-align: left;
@@ -28,7 +26,7 @@
     object-fit: cover;
 }
 
-/*Texto seccion servicios*/
+/* Texto sección servicios */
 .text-containerS {
     width: 100%;
     background: none; /* Asegura que no haya fondo adicional */
@@ -51,12 +49,6 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-@media (min-width: 768px) {
-    .card-img-top {
-        max-width: 250px; /* Aumentar para pantallas medianas */
-        max-height: 250px;
-    }
-}
 .card {
     border: 2px solid transparent; /* Borde transparente inicialmente */
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
@@ -65,14 +57,15 @@
 .card-img-top {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 200px; /* Limita el ancho máximo de la imagen */
-    max-height: 200px; /* Limita la altura máxima de la imagen */
+    max-width: 150px; /* Limita el ancho máximo de la imagen */
+    max-height: 150px; /* Limita la altura máxima de la imagen */
     object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
     margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
 .card-body {
     text-align: center; /* Centra el contenido dentro de la tarjeta */
+    padding: 10px; /* Reduce el padding dentro de la tarjeta */
 }
 
 .card-title {
@@ -91,8 +84,7 @@
     box-shadow: 0 8px 16px rgba(214, 141, 30, 0.651); /* Sombra adicional igual en los cuatro lados */
 }
 
-/*Icono whatsapp*/
-
+/* Icono WhatsApp */
 @media (max-width: 576px) {
     .whatsapp-float {
         bottom: 15px;
@@ -103,16 +95,39 @@
     .whatsapp-float img {
         width: 40px;
     }
+
+    .card {
+        margin: 0 auto; /* Centra la tarjeta dentro del contenedor */
+        max-width: 90%; /* Limita el ancho máximo de la tarjeta en pantallas pequeñas */
+    }
+
+    .card-img-top {
+        max-width: 120px; /* Reducir tamaño máximo de imagen en pantallas pequeñas */
+        max-height: 120px;
+    }
+
+    .card-body {
+        padding: 8px; /* Reducir padding en el cuerpo de la tarjeta */
+    }
+
+    .card-title {
+        font-size: 0.875rem; /* Reducir tamaño del título en pantallas pequeñas */
+    }
+
+    .card-text {
+        font-size: 0.75rem; /* Reducir tamaño del texto en pantallas pequeñas */
+    }
 }
+
 .whatsapp-float {
     position: fixed;
     bottom: 20px; /* Ajusta la distancia desde la parte inferior de la página */
     right: 20px; /* Ajusta la distancia desde la parte derecha de la página */
     z-index: 1000; /* Asegura que el ícono esté por encima de otros elementos */
     border-radius: 50%; /* Asegura que el ícono sea redondo */
-    background-color: #25D366; /* Fondo verde característico de WhatsApp */
-    padding: 10px; /* Espaciado interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de flotación */
+    background-color: transparent; /* Elimina el fondo verde */
+    padding: 0; /* Elimina el espaciado interno si es necesario */
+    box-shadow: none; /* Elimina cualquier sombra del contenedor */
     transition: transform 0.3s ease-in-out; /* Efecto de animación para el "latido" */
 }
 
