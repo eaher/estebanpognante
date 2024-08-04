@@ -1,4 +1,6 @@
 /* styles.css */
+
+/*Texto secciones*/
 .text-container {
     background: white;
     text-align: left;
@@ -26,7 +28,7 @@
     object-fit: cover;
 }
 
-
+/*Texto seccion servicios*/
 .text-containerS {
     width: 100%;
     background: none; /* Asegura que no haya fondo adicional */
@@ -45,6 +47,16 @@
 }
 
 /* Estilo base para las tarjetas */
+.card, .whatsapp-float {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .card-img-top {
+        max-width: 250px; /* Aumentar para pantallas medianas */
+        max-height: 250px;
+    }
+}
 .card {
     border: 2px solid transparent; /* Borde transparente inicialmente */
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
@@ -65,10 +77,12 @@
 
 .card-title {
     font-weight: bold; /* Asegura que el título esté en negrita */
+    color: #333; /* Asegura que haya un buen contraste con el fondo */
 }
 
 .card-text {
     font-size: 1rem; /* Tamaño del texto */
+    color: #555; /* Contraste suficiente con el fondo */
 }
 
 /* Efecto de latido al pasar el cursor */
@@ -78,6 +92,18 @@
 }
 
 /*Icono whatsapp*/
+
+@media (max-width: 576px) {
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+        width: 40px; /* Ajustar tamaño en pantallas pequeñas */
+    }
+
+    .whatsapp-float img {
+        width: 40px;
+    }
+}
 .whatsapp-float {
     position: fixed;
     bottom: 20px; /* Ajusta la distancia desde la parte inferior de la página */
