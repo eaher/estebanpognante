@@ -24,7 +24,8 @@ body {
 .inicio-img {
     display: block;
     width: 100vw; /* Ajusta el ancho de la imagen de inicio al ancho de la ventana */
-    height: 538px; /* Ajusta la altura de la imagen de inicio */
+    height: 60vh; /* Ajusta la altura de la imagen de inicio */
+    min-height: 538px;
     object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
     margin: 0;
     margin-top: 55px; /* Ajusta el margen superior para evitar que la imagen se solape con el menú */
@@ -33,7 +34,7 @@ body {
 .overlay {
     position: absolute; /* Posiciona la imagen superpuesta absolutamente dentro del contenedor */
     top: 50%; /* Centra verticalmente la imagen superpuesta */
-    right: 30%; /* Alinea la imagen superpuesta al 30% desde la derecha de la pantalla */
+    right: 45%; /* Alinea la imagen superpuesta al 30% desde la derecha de la pantalla */
     transform: translate(-150%, -60%); /* Ajusta la posición para centrar verticalmente y desplazar 30% horizontalmente hacia la izquierda */
     width: 305px; /* Ancho fijo de la imagen superpuesta */
     height: 291px; /* Altura fija de la imagen superpuesta */
@@ -41,9 +42,9 @@ body {
 }
 
 /* Media Queries para pantallas más pequeñas */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .overlay {
-        right: 20%; /* Ajusta la alineación horizontal al 20% desde la derecha */
+        right: 35%; /* Ajusta la alineación horizontal al 20% desde la derecha */
         transform: translate(-120%, -60%); /* Ajusta el desplazamiento horizontal */
     }
 }
