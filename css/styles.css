@@ -87,5 +87,84 @@ body {
 .text-container p {
     margin: 0; /* Elimina márgenes adicionales */
     font-weight: 400; /* Aplicar peso Regular a los párrafos */
-    font-size: 1.3rem; /* Ajusta el tamaño del texto de los párrafos (1rem es un tamaño estándar, ajústalo según tus necesidades) */
+    font-size: 1.5rem; /* Ajusta el tamaño del texto de los párrafos (1rem es un tamaño estándar, ajústalo según tus necesidades) */
+    margin-bottom: 90px;
 }
+
+
+/*----------------------------------------------------------------*/
+
+
+
+/* Estilo para la sección de servicios */
+#servicios {
+    background-color: rgb(231, 237, 243); /* Color de fondo de la sección de servicios */
+    margin: 0;
+}
+
+/* Estilo para el contenedor de texto en la sección de servicios */
+#servicios .text-container {
+    background-color: rgb(231, 237, 243); /* Fondo para el contenedor de texto */
+    
+}
+
+/* Estilo para h2 y p en la sección de servicios */
+#servicios .text-container h2 {
+    margin: 0; /* Elimina márgenes adicionales */
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: 600; /* Aplica peso 600 a los encabezados h2 */
+    font-size: 2.6rem; /* Ajusta el tamaño del texto de h2 para que coincida con h1 */
+}
+
+#servicios .text-container p {
+    margin: 0; /* Elimina márgenes adicionales */
+    font-weight: 400; /* Aplicar peso Regular a los párrafos */
+    font-size: 1.5rem; /* Ajusta el tamaño del texto de los párrafos */
+    margin-bottom: 30px;
+    margin-top: 10px;
+    
+}
+
+
+/* Estilo para las tarjetas en la sección de servicios */
+.card {
+    border: none; /* Elimina el borde predeterminado de la tarjeta */
+    display: flex;
+    flex-direction: column; /* Permite que el contenido se ajuste verticalmente */
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+    position: relative; /* Permite posicionar el pseudo-elemento ::before */
+    background-color:rgb(231, 237, 243); /* Color de fondo de las tarjetas */
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.card-img-top {
+    width: 100%; /* Ajusta el ancho de la imagen al ancho del contenedor de la tarjeta */
+    height: auto; /* Ajusta la altura de la imagen automáticamente */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+
+/* Estilo para el contenido dentro de las tarjetas */
+.card-body {
+    position: relative; /* Asegura que el contenido se mantenga sobre el overlay */
+    z-index: 1; /* Coloca el contenido por encima del overlay */
+}
+
+/* Efecto de hover para las tarjetas */
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el ratón */
+}
+
+/* Pseudo-elemento para oscurecer la tarjeta al pasar el ratón */
+.card:hover::before {
+    content: ''; /* Contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento absolutamente dentro de la tarjeta */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Fondo negro con opacidad para oscurecer la tarjeta */
+    z-index: 0; /* Asegura que el pseudo-elemento esté por debajo del contenido */
+}
+
+
