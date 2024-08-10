@@ -6,38 +6,29 @@ body {
     font-weight: 600;
 }
 
+
+/*---------------------------------------------------------*/
+
 /* Estilos para el menú de navegación */
 #navbar {
     background-color: #ffffff; /* Fondo blanco para el menú de navegación */
     transition: top 0.3s; /* Transición suave para el menú */
 }
 
+
+
+
+/*-----------------------------------------------------------*/
+
 /* Estilos para la sección de inicio */
 #inicio {
     position: relative;
     background-color: #ffffff; /* Fondo blanco para la sección de inicio */
-}
-
-.overlay-image-container {
-    position: absolute;
-    top: 60px;
-    left: 140px;
-    width: 291px; /* Ancho de la imagen superpuesta */
-    height: 305px; /* Alto de la imagen superpuesta */
-    z-index: 2; /* Asegura que la imagen esté sobre la imagen de inicio */
-    pointer-events: none; /* Evita que la imagen interfiera con la interacción del usuario */
-}
-
-.overlay-img {
-    display: block;
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
-    object-fit: contain; /* Ajusta la imagen para que se muestre completa sin recortes */
+    margin-bottom: 50px;
 }
 
 .image-container {
     position: relative;
-    z-index: 1; /* Asegura que la imagen de inicio esté detrás de la imagen superpuesta */
 }
 
 .inicio-img {
@@ -54,29 +45,20 @@ body {
     padding: 20px;
     box-sizing: border-box;
     background: #ffffff; /* Fondo blanco para el texto */
-    z-index: 1; /* Asegura que el texto esté sobre la imagen de inicio */
 }
 
 /* Estilos para el h1 y p dentro de text-container */
 .text-container h1 {
     margin: 0; /* Elimina márgenes adicionales */
+    margin-top: 50px;
+    margin-bottom: 10px ;
     font-weight: 600; /* Aplica peso 600 a los encabezados h1 */
-    font-size: 2.5rem; /* Ajusta el tamaño del texto de h1 (2.5rem es un tamaño grande, ajústalo según tus necesidades) */
+    font-size: 2.6rem; /* Ajusta el tamaño del texto de h1 (2.5rem es un tamaño grande, ajústalo según tus necesidades) */
 }
 
 .text-container p {
     margin: 0; /* Elimina márgenes adicionales */
     font-weight: 400; /* Aplicar peso Regular a los párrafos */
-    font-size: 1rem; /* Ajusta el tamaño del texto de los párrafos (1rem es un tamaño estándar, ajústalo según tus necesidades) */
+    font-size: 1.3rem; /* Ajusta el tamaño del texto de los párrafos (1rem es un tamaño estándar, ajústalo según tus necesidades) */
 }
 
-/* Estilos para el h1 y p dentro de text-container en pantallas pequeñas */
-@media (max-width: 768px) {
-    .text-container h1 {
-        font-size: 2rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
-    }
-
-    .text-container p {
-        font-size: 0.875rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
-    }
-}
