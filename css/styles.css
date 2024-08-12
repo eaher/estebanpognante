@@ -195,3 +195,8 @@ body {
     width: 100%; /* Asegura que el video sea responsivo */
     max-height: 500px; /* Mantiene las proporciones del video */
 }
+
+
+.highlighted {
+    color: #ec6547; /* Cambia este color al que prefieras */
+}
