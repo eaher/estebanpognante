@@ -95,8 +95,6 @@ body {
 
 /*----------------------------------------------------------------*/
 
-
-
 /* Estilo para la sección de servicios */
 #servicios {
     background-color: rgb(231, 237, 243); /* Color de fondo de la sección de servicios */
@@ -127,15 +125,14 @@ body {
     
 }
 
-
 /* Estilo para las tarjetas en la sección de servicios */
 .card {
     border: none; /* Elimina el borde predeterminado de la tarjeta */
     display: flex;
     flex-direction: column; /* Permite que el contenido se ajuste verticalmente */
-    transition: transform 0.3s ease; /* Transición suave para el zoom */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el zoom y la sombra */
     position: relative; /* Permite posicionar el pseudo-elemento ::before */
-    background-color:rgb(231, 237, 243); /* Color de fondo de las tarjetas */
+    background-color: rgb(231, 237, 243); /* Color de fondo de las tarjetas */
 }
 
 /* Estilo para las imágenes dentro de las tarjetas */
@@ -154,20 +151,8 @@ body {
 /* Efecto de hover para las tarjetas */
 .card:hover {
     transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
 }
-
-/* Pseudo-elemento para oscurecer la tarjeta al pasar el ratón */
-.card:hover::before {
-    content: ''; /* Contenido vacío para el pseudo-elemento */
-    position: absolute; /* Posiciona el pseudo-elemento absolutamente dentro de la tarjeta */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Fondo negro con opacidad para oscurecer la tarjeta */
-    z-index: 0; /* Asegura que el pseudo-elemento esté por debajo del contenido */
-}
-
 
 /* Estilo para las tarjetas tamaño */
 .custom-card {
@@ -181,8 +166,6 @@ body {
     object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
 }
 
-
-
 /*--------------------------------------------------*/
 
 /* Estilo para la sección de actualizado */
@@ -195,7 +178,6 @@ body {
     font-weight: 600; /* Peso de fuente para el h2 */
     margin-bottom: 20px; /* Margen inferior para separar del párrafo */
     color: #ffffff; /* Color de fuente blanco para el párrafo */
-
 }
 
 #actualizado p {
@@ -203,7 +185,6 @@ body {
     font-weight: 400; /* Peso de fuente para el párrafo */
     margin-bottom: 20px; /* Margen inferior para separar del video */
     color: #ffffff; /* Color de fuente blanco para el párrafo */
-
 }
 
 #actualizado .video-container {
