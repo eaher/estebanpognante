@@ -171,7 +171,7 @@ body {
 
 /* Estilo para la sección de actualizado */
 #actualizado {
-    background-color: #323333; /* Color de fondo de la sección actualizado */
+    background-color: rgb(51, 51, 51); /* Color de fondo de la sección actualizado */
 }
 
 #actualizado h2 {
