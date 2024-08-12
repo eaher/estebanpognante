@@ -201,3 +201,20 @@ body {
 .highlighted {
     color: #ec6547; /* Cambia este color al que prefieras */
 }
+
+
+/* Estilo para el video en pantallas grandes */
+@media (min-width: 768px) {
+    #actualizado video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilo para el video en pantallas pequeñas */
+@media (max-width: 767px) {
+    #actualizado video {
+        width: 100%;
+        height: auto;
+    }
+}
