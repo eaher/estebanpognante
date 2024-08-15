@@ -25,7 +25,6 @@ body {
     display: block;
     width: 100vw; /* Ajusta el ancho de la imagen de inicio al ancho de la ventana */
     height: 60vh; /* Ajusta la altura de la imagen de inicio */
-    min-height: 538px;
     object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
     margin: 0;
     margin-top: 55px; /* Ajusta el margen superior para evitar que la imagen se solape con el menú */
@@ -35,24 +34,24 @@ body {
     position: absolute; /* Posiciona la imagen superpuesta absolutamente dentro del contenedor */
     top: 50%; /* Centra verticalmente la imagen superpuesta */
     right: 45%; /* Alinea la imagen superpuesta al 30% desde la derecha de la pantalla */
-    transform: translate(-150%, -60%); /* Ajusta la posición para centrar verticalmente y desplazar 30% horizontalmente hacia la izquierda */
-    width: 305px; /* Ancho fijo de la imagen superpuesta */
-    height: 291px; /* Altura fija de la imagen superpuesta */
+    transform: translate(-110%, -80%); /* Ajusta la posición para centrar verticalmente y desplazar 30% horizontalmente hacia la izquierda */
+    width: 265px; /* Ancho fijo de la imagen superpuesta */
+    height: 211px; /* Altura fija de la imagen superpuesta */
     z-index: 2; /* Asegura que la imagen superpuesta esté por encima de otros elementos */
 }
 
 /* Media Queries para pantallas más pequeñas */
 @media (max-width: 1400px) {
     .overlay {
-        right: 35%; /* Ajusta la alineación horizontal al 20% desde la derecha */
-        transform: translate(-120%, -60%); /* Ajusta el desplazamiento horizontal */
+        right: 35%; /* Ajusta la alineación horizontal al n% desde la derecha */
+        transform: translate(-140%, -80%); /* Ajusta el desplazamiento horizontal */
     }
 }
 
 @media (max-width: 992px) {
     .overlay {
         right: 10%; /* Ajusta la alineación horizontal al 10% desde la derecha */
-        transform: translate(-90%, -60%); /* Ajusta el desplazamiento horizontal */
+        transform: translate(-140%, -80%); /* Ajusta el desplazamiento horizontal */
     }
 }
 
@@ -60,7 +59,7 @@ body {
     .overlay {
         right: 0;
         left: 50%; /* Alinea la imagen al centro horizontalmente */
-        transform: translate(-50%, -60%); /* Centra la imagen completamente */
+        transform: translate(-50%, -80%); /* Centra la imagen completamente */
     }
 }
 
@@ -82,13 +81,13 @@ body {
     margin-top: 50px;
     margin-bottom: 10px;
     font-weight: 600; /* Aplica peso 600 a los encabezados h1 */
-    font-size: 2.6rem; /* Ajusta el tamaño del texto de h1 (2.5rem es un tamaño grande, ajústalo según tus necesidades) */
+    font-size: 2rem; /* Ajusta el tamaño del texto de h1 (2.5rem es un tamaño grande, ajústalo según tus necesidades) */
 }
 
 .text-container p {
     margin: 0; /* Elimina márgenes adicionales */
     font-weight: 400; /* Aplicar peso Regular a los párrafos */
-    font-size: 1.5rem; /* Ajusta el tamaño del texto de los párrafos (1rem es un tamaño estándar, ajústalo según tus necesidades) */
+    font-size: 1.2rem; /* Ajusta el tamaño del texto de los párrafos (1rem es un tamaño estándar, ajústalo según tus necesidades) */
     margin-bottom: 90px;
 }
 
@@ -113,13 +112,13 @@ body {
     margin-top: 50px;
     margin-bottom: 10px;
     font-weight: 600; /* Aplica peso 600 a los encabezados h2 */
-    font-size: 2.6rem; /* Ajusta el tamaño del texto de h2 para que coincida con h1 */
+    font-size: 2rem; /* Ajusta el tamaño del texto de h2 para que coincida con h1 */
 }
 
 #servicios .text-container p {
     margin: 0; /* Elimina márgenes adicionales */
     font-weight: 400; /* Aplicar peso Regular a los párrafos */
-    font-size: 1.5rem; /* Ajusta el tamaño del texto de los párrafos */
+    font-size: 1.2rem; /* Ajusta el tamaño del texto de los párrafos */
     margin-bottom: 30px;
     margin-top: 10px;
     
@@ -175,14 +174,14 @@ body {
 }
 
 #actualizado h2 {
-    font-size: 2.6rem; /* Tamaño de fuente para el h2 */
+    font-size: 2rem; /* Tamaño de fuente para el h2 */
     font-weight: 600; /* Peso de fuente para el h2 */
     margin-bottom: 20px; /* Margen inferior para separar del párrafo */
     color: #ffffff; /* Color de fuente blanco para el párrafo */
 }
 
 #actualizado p {
-    font-size: 1.3rem; /* Tamaño de fuente para el párrafo */
+    font-size: 1.2rem; /* Tamaño de fuente para el párrafo */
     font-weight: 400; /* Peso de fuente para el párrafo */
     margin-bottom: 20px; /* Margen inferior para separar del video */
     color: #ffffff; /* Color de fuente blanco para el párrafo */
@@ -194,27 +193,104 @@ body {
 
 #actualizado video {
     width: 100%; /* Asegura que el video sea responsivo */
-    max-height: 500px; /* Mantiene las proporciones del video */
+    max-height: 350px; /* Mantiene las proporciones del video */
+    
 }
-
 
 .highlighted {
     color: #ec6547; /* Cambia este color al que prefieras */
 }
 
+/*---------------------------------------------------------------------------------------*/
 
-/* Estilo para el video en pantallas grandes */
-@media (min-width: 768px) {
-    #actualizado video {
-        width: 100%;
-        height: auto;
-    }
+#nosotros h3 {
+    font-size: 3rem; /* Tamaño de fuente para el h3 */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+    margin-bottom: 50px;
 }
 
-/* Estilo para el video en pantallas pequeñas */
-@media (max-width: 767px) {
-    #actualizado video {
-        width: 100%;
-        height: auto;
-    }
+
+/* Estilo específico para las tarjetas en la sección de Nosotros */
+.nosotros-card {
+    width: 98%; /* Ocupa todo el ancho disponible dentro de la columna */
+    height: 400px; /* Altura fija de la tarjeta */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de la tarjeta en columna */
+    margin: 0 auto; /* Centra la tarjeta dentro de su columna */
+    overflow: hidden; /* Asegura que los elementos no se salgan del contenedor */
+    margin-bottom: 10px;
+}
+
+.nosotros-card img {
+    width: 100%; /* Ajusta el ancho de la imagen al ancho del contenedor de la tarjeta */
+    height: 350px; /* Altura fija para la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+
+.nosotros-card .card-body {
+    background-color: #000; /* Fondo negro para la descripción */
+    color: #fff; /* Texto blanco */
+    padding: 5px; /* Espacio dentro del contenedor de texto */
+    height: 50px; /* Altura fija para el área de la descripción */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    text-align: center; /* Alineación del texto en el centro */
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+}
+
+/* Elimina el margen a los lados */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Elimina el margen entre las tarjetas */
+.no-gutters {
+    margin: 5px;
+    padding: 0;
+
+}
+
+.no-gutters .col-md-3 {
+    padding-left: 0; /* Elimina el margen entre tarjetas */
+    padding-right: 0; /* Elimina el margen entre tarjetas */
+}
+
+/*----------------------*/
+
+/* Estilos generales para la sección Nosotros */
+#nosotros {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.nosotros-card {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    overflow: hidden; /* Asegura que el pseudo-elemento no se salga del contenedor */
+    transition: box-shadow 0.3s;
+}
+
+.nosotros-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.596); /* Color blanco transparente */
+    transform: translateY(100%); /* Inicialmente oculto (fuera de la vista) */
+    transition: transform 0.7s ease;
+    z-index: 1; /* Asegura que esté encima del contenido de la tarjeta */
+}
+
+/* Efecto hover en la tarjeta */
+.nosotros-card:hover::after {
+    transform: translateY(0); /* Despliega el pseudo-elemento hacia arriba */
+}
+
+/* Opcional: Efecto de sombra al pasar el ratón sobre la tarjeta */
+.nosotros-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
