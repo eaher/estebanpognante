@@ -203,10 +203,13 @@ p {
 }
 
 #nosotros h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3.8rem;
+    font-weight: 600;
     color: #333;
+    margin-bottom: 4rem !important; /* Aumenta el margen inferior con !important */
 }
+
+
 
 #nosotros .card {
     position: relative;
