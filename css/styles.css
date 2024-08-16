@@ -28,7 +28,7 @@ p {
 /*Sección imgInicio (solo imagen) */
 
 #imgInicio {
-    background: url('/img/IMAGENINICIO.png') no-repeat center center/cover;
+    background: url('../img/IMAGENINICIO.png') no-repeat center center/cover;
     height: 50vh; /* Ajusta la altura inicial al 50% del viewport */
     min-height: 200px;
     max-height: 600px;
