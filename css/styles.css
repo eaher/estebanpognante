@@ -28,7 +28,6 @@ p {
     margin-left: auto; /* Mantiene el botón de menú a la derecha */
 }
 
-
 /*-------------------------------------------------------------------------------*/
 /*Sección imgInicio (solo imagen) */
 
@@ -150,6 +149,7 @@ p {
     transition: transform 0.3s;
     max-width: 90%; /* Ajusta el tamaño máximo de las tarjetas */
     background-color: transparent; /* Hace que el fondo de las tarjetas sea transparente */
+    margin: 0 auto; /* Centra las tarjetas en la pantalla */
 }
 
 #servicios .card:hover {
@@ -217,6 +217,11 @@ p {
 
     #actualizado p {
         font-size: 1rem; /* Tamaño del párrafo ajustado para pantallas más pequeñas */
+    }
+
+    .responsive-video {
+        margin: 0 auto; /* Centra el video en pantallas pequeñas */
+        display: block;
     }
 }
 
@@ -444,6 +449,8 @@ p {
     #redes .social-icon {
         max-width: 100px; /* Ajusta el tamaño máximo de las imágenes para pantallas más pequeñas */
         max-height: 100px;
+        margin: 0 auto; /* Centra las imágenes en pantallas pequeñas */
+        display: block;
     }
 }
 
@@ -523,10 +530,13 @@ p {
 @media (max-width: 768px) {
     #donde-estamos h2 {
         font-size: 3rem; /* Tamaño del h2 ajustado para pantallas más pequeñas */
+        text-align: center; /* Centra el h2 en pantallas pequeñas */
+        margin-left: 0; /* Elimina el margen izquierdo */
     }
 
     #donde-estamos p {
         font-size: 1rem; /* Tamaño del párrafo ajustado para pantallas más pequeñas */
+        text-align: center; /* Centra el párrafo en pantallas pequeñas */
     }
 }
 
