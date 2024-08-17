@@ -272,3 +272,178 @@ p {
     font-size: 1rem;
     color: #fff;
 }
+
+/*-------------------------------------------------------------------------------*/
+/* Sección Nuestro Equipo */
+
+#equipo h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left; /* Alinea el h2 a la izquierda */
+}
+
+#equipo p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 20px; /* Espaciado inferior adecuado para separar del contenido */
+    text-align: left; /* Alinea el párrafo a la izquierda */
+}
+
+#equipo .cards-container {
+    background-color: #f0f0f0; /* Cambia este valor por el color de fondo deseado */
+    padding: 20px; /* Ajusta el espaciado interno */
+    border-radius: 10px; /* Opcional: Añade un borde redondeado */
+    margin-left: 10px; /* Margen izquierdo de 10px */
+    margin-right: 10px; /* Margen derecho de 10px */
+}
+#equipo .card {
+    border: none; /* Elimina el borde de las tarjetas */
+    transition: transform 0.3s ease-in-out; /* Suaviza el efecto de transformación */
+    position: relative; /* Asegura que el contenido superpuesto se posicione correctamente */
+    overflow: hidden; /* Evita que el contenido salga del borde de la tarjeta */
+}
+
+#equipo .card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse por encima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Añade una sombra suave al hacer hover */
+}
+
+#equipo .card-img-top {
+    width: 100%;
+    height: auto; /* Asegura que la imagen mantenga su proporción */
+    object-fit: cover; /* Cubre todo el espacio del contenedor de la tarjeta */
+    border-radius: 5px; /* Añade un pequeño redondeo a las esquinas */
+}
+
+#equipo .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto */
+}
+
+#equipo .overlay h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+#equipo .overlay h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    margin: 0;
+}
+
+/*-------------------------------------------------------------------------------*/
+/* Sección Redes */
+#redes h3 {
+    font-size: 2.0rem; /* Ajusta el tamaño del h3 */
+    font-weight: 400;
+    color: #333;
+}
+
+#redes h4 {
+    font-size: 3rem; /* Ajusta el tamaño del h4 */
+    font-weight: 600;
+    color: #555;
+}
+
+#redes p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+#redes .social-icon {
+    width: 100%; /* Asegura que la imagen se ajuste a su contenedor */
+    max-width: 150px; /* Limita el ancho máximo a 200px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 150px; /* Limita la altura máxima a 200px */
+    transition: transform 0.3s ease-in-out;
+}
+
+#redes .social-icon:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse por encima */
+}
+
+/*-------------------------------------------------------------------------------*/
+/* Sección Contacto */
+#contacto h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contacto h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#contact-form .btn {
+    width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+/*-------------------------------------------------------------------------------*/
+/* Sección Dónde Estamos */
+#donde-estamos {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Fondo suave para la sección */
+}
+
+#donde-estamos h2 {
+    font-size: 4rem; /* Tamaño del h2 ajustable */
+    font-weight: 600;
+    color: #333;
+    margin-left: 120px;
+}
+
+#donde-estamos p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+    text-align: right; /* Alineación a la derecha para que esté en línea con el h2 */
+    margin: 0; /* Sin margen para alinear con el h2 */
+}
+
+#donde-estamos iframe {
+    border: none; /* Elimina el borde del iframe */
+    width: 100%;
+    height: 450px; /* Altura del mapa */
+}
+/*-------------------------------------------------------------------------------*/
+/*footer*/
+
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+footer p {
+    margin: 0; /* Elimina el margen */
+    font-size: 1rem; /* Tamaño de fuente ajustable */
+    color: #e2e8ed;
+}
