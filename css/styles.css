@@ -16,13 +16,18 @@ p {
 }
 
 /*-------------------------------------------------------------------------------*/
-/*Navbar*/
-
 .navbar-brand {
-    margin-left: 10px; /* Alinea a la izquierda con un margen máximo de 10px */
-    position: absolute; /* Posiciona el elemento fuera del flujo normal para evitar que afecte la alineación del resto del contenido */
-    left: 10px; /* Asegura que esté a 10px del borde izquierdo */
+    position: absolute;
+    left: 10px; /* Alinea a la izquierda con un margen de 10px */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta la posición para centrar el texto verticalmente */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos del navbar */
 }
+
+.navbar-toggler {
+    margin-left: auto; /* Mantiene el botón de menú a la derecha */
+}
+
 
 /*-------------------------------------------------------------------------------*/
 /*Sección imgInicio (solo imagen) */
@@ -108,17 +113,22 @@ p {
     font-weight: 400; /* Ajusta el peso del párrafo si es necesario */
 }
 
+@media (max-width: 768px) {
+    #inicio h1 {
+        font-size: 2rem; /* Ajusta el tamaño del h1 para pantallas más pequeñas */
+    }
+
+    #inicio p {
+        font-size: 1rem; /* Ajusta el tamaño del párrafo para pantallas más pequeñas */
+    }
+}
+
 /*-------------------------------------------------------------------------------*/
 /*Sección servicios*/
 
 #servicios {
     padding: 40px 0; /* Espaciado superior e inferior */
     background-color: #e2e8ed; /* Cambia este valor por el color que prefieras */
-}
-
-
-#servicios {
-    padding: 40px 0; /* Espaciado superior e inferior */
 }
 
 #servicios h2 {
@@ -151,6 +161,17 @@ p {
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción original de la imagen */
 }
+
+@media (max-width: 768px) {
+    #servicios h2 {
+        font-size: 2rem; /* Tamaño del h2 ajustado para pantallas más pequeñas */
+    }
+
+    #servicios p {
+        font-size: 1rem; /* Tamaño del párrafo ajustado para pantallas más pequeñas */
+    }
+}
+
 /*-------------------------------------------------------------------------------*/
 /*Sección actualizado*/
 
@@ -175,7 +196,6 @@ p {
     text-align: justify;
 }
 
-
 .embed-responsive {
     margin-top: 20px; /* Ajusta el margen superior del video */
 }
@@ -190,13 +210,19 @@ p {
     margin-left: 30px;
 }
 
-.highlight {
-    color: #ff7300; /* Color anaranjado */
-    font-weight: 600; /* Opcional: Puedes agregar negrita para destacarlo más */
+@media (max-width: 768px) {
+    #actualizado h2 {
+        font-size: 2.5rem; /* Tamaño del h2 ajustado para pantallas más pequeñas */
+    }
+
+    #actualizado p {
+        font-size: 1rem; /* Tamaño del párrafo ajustado para pantallas más pequeñas */
+    }
 }
 
 /*-------------------------------------------------------------------------------*/
 /* Sección Nosotros */
+
 #nosotros {
     background-color: #f8f9fa;
     padding: 40px 0;
@@ -208,8 +234,6 @@ p {
     color: #333;
     margin-bottom: 4rem !important; /* Aumenta el margen inferior con !important */
 }
-
-
 
 #nosotros .card {
     position: relative;
@@ -226,6 +250,7 @@ p {
 }
 
 /* Efecto persiana en imágenes y videos */
+
 #nosotros .card-img-top-container {
     position: relative;
     overflow: hidden;
@@ -248,7 +273,7 @@ p {
     transform: translateY(0);
 }
 
-#nosotros .card-img-top, 
+#nosotros .card-img-top,
 #nosotros video {
     width: 100%;
     height: 100%;
@@ -271,6 +296,16 @@ p {
 #nosotros .card-text {
     font-size: 1rem;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    #nosotros h2 {
+        font-size: 2.8rem; /* Tamaño del h2 ajustado para pantallas más pequeñas */
+    }
+
+    #nosotros .card-text {
+        font-size: 0.9rem; /* Tamaño del texto ajustado para pantallas más pequeñas */
+    }
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -299,6 +334,7 @@ p {
     margin-left: 10px; /* Margen izquierdo de 10px */
     margin-right: 10px; /* Margen derecho de 10px */
 }
+
 #equipo .card {
     border: none; /* Elimina el borde de las tarjetas */
     transition: transform 0.3s ease-in-out; /* Suaviza el efecto de transformación */
@@ -342,8 +378,27 @@ p {
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    #equipo h2 {
+        font-size: 2.5rem; /* Tamaño del h2 ajustado para pantallas más pequeñas */
+    }
+
+    #equipo p {
+        font-size: 1rem; /* Tamaño del párrafo ajustado para pantallas más pequeñas */
+    }
+
+    #equipo .overlay h3 {
+        font-size: 1.3rem; /* Tamaño del h3 ajustado para pantallas más pequeñas */
+    }
+
+    #equipo .overlay h4 {
+        font-size: 0.9rem; /* Tamaño del h4 ajustado para pantallas más pequeñas */
+    }
+}
+
 /*-------------------------------------------------------------------------------*/
 /* Sección Redes */
+
 #redes h3 {
     font-size: 2.0rem; /* Ajusta el tamaño del h3 */
     font-weight: 400;
@@ -373,8 +428,28 @@ p {
     transform: scale(1.1); /* Efecto de aumento al pasar el mouse por encima */
 }
 
+@media (max-width: 768px) {
+    #redes h3 {
+        font-size: 1.8rem; /* Ajusta el tamaño del h3 para pantallas más pequeñas */
+    }
+
+    #redes h4 {
+        font-size: 2.5rem; /* Ajusta el tamaño del h4 para pantallas más pequeñas */
+    }
+
+    #redes p {
+        font-size: 1.2rem; /* Ajusta el tamaño del párrafo para pantallas más pequeñas */
+    }
+
+    #redes .social-icon {
+        max-width: 100px; /* Ajusta el tamaño máximo de las imágenes para pantallas más pequeñas */
+        max-height: 100px;
+    }
+}
+
 /*-------------------------------------------------------------------------------*/
 /* Sección Contacto */
+
 #contacto h2 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -406,8 +481,19 @@ p {
     border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+    #contacto h2 {
+        font-size: 2rem; /* Tamaño del h2 ajustado para pantallas más pequeñas */
+    }
+
+    #contacto h3 {
+        font-size: 1.5rem; /* Tamaño del h3 ajustado para pantallas más pequeñas */
+    }
+}
+
 /*-------------------------------------------------------------------------------*/
 /* Sección Dónde Estamos */
+
 #donde-estamos {
     padding: 40px 0;
     background-color: #f9f9f9; /* Fondo suave para la sección */
@@ -433,6 +519,17 @@ p {
     width: 100%;
     height: 450px; /* Altura del mapa */
 }
+
+@media (max-width: 768px) {
+    #donde-estamos h2 {
+        font-size: 3rem; /* Tamaño del h2 ajustado para pantallas más pequeñas */
+    }
+
+    #donde-estamos p {
+        font-size: 1rem; /* Tamaño del párrafo ajustado para pantallas más pequeñas */
+    }
+}
+
 /*-------------------------------------------------------------------------------*/
 /*footer*/
 
@@ -446,4 +543,10 @@ footer p {
     margin: 0; /* Elimina el margen */
     font-size: 1rem; /* Tamaño de fuente ajustable */
     color: #e2e8ed;
+}
+
+@media (max-width: 768px) {
+    footer p {
+        font-size: 0.9rem; /* Tamaño del texto ajustado para pantallas más pequeñas */
+    }
 }
