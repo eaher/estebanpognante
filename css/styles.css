@@ -16,17 +16,28 @@ p {
 }
 
 /*-------------------------------------------------------------------------------*/
-.navbar-brand {
-    position: absolute;
-    left: 10px; /* Alinea a la izquierda con un margen de 10px */
-    top: 50%; /* Centra verticalmente */
-    transform: translateY(-50%); /* Ajusta la posición para centrar el texto verticalmente */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos del navbar */
+/* Estilos generales del Navbar */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco para el navbar */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
 }
 
-.navbar-toggler {
-    margin-left: auto; /* Mantiene el botón de menú a la derecha */
+/* Estilos para la marca */
+.navbar-brand {
+    color: #333333; /* Color de la fuente para la marca */
 }
+
+/* Estilos para los enlaces del menú */
+.navbar-nav .nav-link {
+    color: #333333; /* Color de la fuente para los enlaces del menú */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Color al pasar el mouse por encima de los enlaces */
+}
+
+
+
 
 /*-------------------------------------------------------------------------------*/
 /*Sección imgInicio (solo imagen) */
