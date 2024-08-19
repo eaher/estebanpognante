@@ -464,14 +464,15 @@ p {
     }
 
     #redes .row {
-        width: 100%; /* Asegura que las filas ocupen todo el ancho disponible */
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en filas nuevas */
     }
 
     #redes .col-6 {
-        width: 100%; /* Asegura que las columnas ocupen todo el ancho disponible */
+        width: 50%; /* Cada columna ocupará el 50% del ancho de la pantalla */
+        margin-bottom: 1rem; /* Añade margen inferior entre imágenes */
         display: flex;
         justify-content: center; /* Centra las imágenes dentro de cada columna */
-        margin-bottom: 1rem; /* Añade margen inferior entre imágenes */
     }
 
     #redes .social-icon {
