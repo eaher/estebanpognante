@@ -110,7 +110,7 @@ p {
 #inicio {
     background: none; /* Sin fondo específico */
     padding: 40px 0; /* Espaciado superior e inferior */
-    text-align: center;
+    text-align: left;
 }
 
 #inicio h1 {
@@ -158,7 +158,7 @@ p {
 #servicios .card {
     border: none; /* Elimina el borde de las tarjetas */
     transition: transform 0.3s;
-    max-width: 90%; /* Ajusta el tamaño máximo de las tarjetas */
+    max-width: 80%; /* Ajusta el tamaño máximo de las tarjetas */
     background-color: transparent; /* Hace que el fondo de las tarjetas sea transparente */
     margin: 0 auto; /* Centra las tarjetas en la pantalla */
 }
