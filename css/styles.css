@@ -444,44 +444,9 @@ p {
     transform: scale(1.1); /* Efecto de aumento al pasar el mouse por encima */
 }
 
-@media (max-width: 768px) {
-    #redes h3 {
-        font-size: 1.8rem; /* Ajusta el tamaño del h3 para pantallas más pequeñas */
-    }
 
-    #redes h4 {
-        font-size: 2.5rem; /* Ajusta el tamaño del h4 para pantallas más pequeñas */
-    }
 
-    #redes p {
-        font-size: 1.2rem; /* Ajusta el tamaño del párrafo para pantallas más pequeñas */
-    }
 
-    #redes .col-md-7 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centra las imágenes horizontalmente */
-    }
-
-    #redes .row {
-        display: flex;
-        flex-wrap: wrap; /* Permite que los elementos se ajusten en filas nuevas */
-    }
-
-    #redes .col-6 {
-        width: 50%; /* Cada columna ocupará el 50% del ancho de la pantalla */
-        margin-bottom: 1rem; /* Añade margen inferior entre imágenes */
-        display: flex;
-        justify-content: center; /* Centra las imágenes dentro de cada columna */
-    }
-
-    #redes .social-icon {
-        max-width: 100px; /* Ajusta el tamaño máximo de las imágenes para pantallas más pequeñas */
-        max-height: 100px;
-        margin: 0 auto; /* Centra las imágenes en pantallas pequeñas */
-        display: block;
-    }
-}
 
 
 /*-------------------------------------------------------------------------------*/
