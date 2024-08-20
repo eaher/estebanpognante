@@ -476,8 +476,9 @@ p {
     font-size: 1rem;
 }
 
-#contact-form .btn {
-    width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+#contacto .btn {
+    width: 100%; /* Hace que el botón ocupe todo el ancho del contenedor */
+    max-width: 100%; /* Asegura que el botón no exceda el ancho de su contenedor */
     font-size: 1.2rem;
     padding: 10px 0;
     border-radius: 5px;
@@ -490,6 +491,11 @@ p {
 
     #contacto h3 {
         font-size: 1.5rem; /* Tamaño del h3 ajustado para pantallas más pequeñas */
+    }
+
+    #contacto .form-control,
+    #contacto .btn {
+        width: 100%; /* Asegura que tanto los campos como el botón ocupen todo el ancho en pantallas pequeñas */
     }
 }
 
