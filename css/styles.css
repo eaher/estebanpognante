@@ -7,7 +7,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    color: #000; /* Asegura que los títulos tengan un color oscuro */
+    color: #191919
+    ; /* Asegura que los títulos tengan un color oscuro */
 }
 
 p {
@@ -108,6 +109,7 @@ p {
     background: none; /* Sin fondo específico */
     padding: 40px 0; /* Espaciado superior e inferior */
     text-align: center;
+    background-color:  #FAFAFA;
 }
 
 #inicio h1 {
@@ -135,7 +137,7 @@ p {
 
 #servicios {
     padding: 40px 0; /* Espaciado superior e inferior */
-    background-color: #e2e8ed; /* Cambia este valor por el color que prefieras */
+    background-color: #E7F0F5; /* Cambia este valor por el color que prefieras */
 }
 
 #servicios h2 {
@@ -189,10 +191,14 @@ p {
 /*Sección actualizado*/
 
 #actualizado {
-    background-color: #323235; /* Color de fondo opcional */
+    background-color: #333333; /* Color de fondo opcional */
     padding: 40px 0; /* Espaciado superior e inferior */
 }
 
+.highlight{
+color: #FAFAFA;
+    
+}
 #actualizado h2 {
     font-size: 3.4rem;
     font-weight: 500;
@@ -351,7 +357,7 @@ p {
 }
 
 #equipo .cards-container {
-    background-color: #f0f0f0; /* Cambia este valor por el color de fondo deseado */
+    background-color: #E8E6E6 !important; /* Cambia este valor por el color de fondo deseado */
     padding: 20px; /* Ajusta el espaciado interno */
     border-radius: 10px; /* Opcional: Añade un borde redondeado */
     margin-left: 10px; /* Margen izquierdo de 10px */
@@ -427,6 +433,11 @@ p {
     font-weight: 400;
     color: #333;
     text-align: center;
+}
+
+.py-5{
+    background-color: #FAFAFA;
+    
 }
 
 #redes h4 {
@@ -511,7 +522,7 @@ p {
 
 #donde-estamos {
     padding: 40px 0;
-    background-color: #f9f9f9; /* Fondo suave para la sección */
+    background-color:  #E8E6E6; /* Fondo suave para la sección */
 }
 
 #donde-estamos h2 {
@@ -549,23 +560,85 @@ p {
     }
 }
 
-/*-------------------------------------------------------------------------------*/
-/*footer*/
+/*-----------------------------------------------------------*/
 
-footer {
-    background-color: #333; /* Color de fondo del pie de página */
-    color: #fff; /* Color del texto */
-    padding: 20px 0; /* Espaciado superior e inferior */
+/* Footer */
+
+.custom-footer {
+    padding: 0;
+    color: #fff; /* Color de texto blanco predeterminado */
+    background-color:  #FAFAFA; 
+    border: none; /* Elimina cualquier borde o línea */
 }
 
-footer p {
-    margin: 0; /* Elimina el margen */
-    font-size: 1rem; /* Tamaño de fuente ajustable */
-    color: #e2e8ed;
+.section-container {
+    background-color: #FAFAFA; 
+    color: #191919; 
+    padding: 20px 0; /* Ajusta el espaciado si es necesario */
 }
 
+.section-container p {
+    color: #191919; 
+    font-weight: 400;
+}
+
+.copy-container {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: #fff; /* Fondo blanco */
+    color: #191919; /* Color del texto */
+    padding: 10px 0; /* Ajusta el espaciado si es necesario */
+    
+}
+
+.copy-container p {
+    color: #191919; /* Color del texto */
+    margin: 0; /* Elimina margen */
+}
+
+footer .row {
+    display: flex; /* Utiliza flexbox para la disposición */
+    justify-content: space-between; /* Espacio entre los contenedores */
+    flex-wrap: nowrap; /* Mantiene los elementos en una fila horizontal */
+}
+
+footer .col-md-4 {
+    position: relative; /* Posiciona relativo para usar pseudo-elementos */
+    flex: 1; /* Asegura que las columnas se expandan por igual */
+    padding: 10px 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+footer .col-md-4:not(:last-child)::after {
+    content: ""; /* Crea un elemento vacío para la línea de separación */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px; /* Ancho de la línea vertical */
+    height: 100%;
+    background-color: #fff; /* Color blanco para la línea */
+}
+
+/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
-    footer p {
-        font-size: 0.9rem; /* Tamaño del texto ajustado para pantallas más pequeñas */
+    footer .row {
+        flex-direction: row; /* Mantiene los contenedores en fila horizontal */
+        justify-content: space-around; /* Distribuye el espacio de manera uniforme */
+    }
+
+    footer .col-md-4 {
+        flex: 1 1 30%; /* Ajusta el ancho de las columnas para mejor distribución */
+        text-align: center; /* Centra el contenido para una mejor apariencia */
+        padding: 15px; /* Ajusta el espaciado interno */
+    }
+
+    footer .col-md-4:not(:last-child)::after {
+        content: ""; /* Asegura que las líneas de separación permanezcan */
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 1px; /* Ancho de la línea vertical */
+        height: 50%; /* Ajusta la altura para que se vea estéticamente en pantallas pequeñas */
+        background-color: #fff; /* Color blanco para la línea */
     }
 }
