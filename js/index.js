@@ -22,3 +22,22 @@ window.addEventListener('scroll', function () {
     
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
+
+
+//efecto video en servicio
+// Selecciona todos los elementos de video en la sección de servicios
+const videos = document.querySelectorAll('.video-servicio');
+
+videos.forEach(video => {
+    // Inicia el video al pasar el mouse por encima
+    video.addEventListener('mouseenter', () => {
+        video.play();
+    });
+
+    // Pausa el video al quitar el mouse
+    video.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0; // Resetea el video al inicio
+    });
+});
+

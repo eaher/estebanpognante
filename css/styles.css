@@ -36,9 +36,6 @@ p {
     color: #007bff; /* Color al pasar el mouse por encima de los enlaces */
 }
 
-
-
-
 /*-------------------------------------------------------------------------------*/
 /*Sección imgInicio (solo imagen) */
 
@@ -134,7 +131,7 @@ p {
 }
 
 /*-------------------------------------------------------------------------------*/
-/*Sección servicios*/
+/* Sección servicios */
 
 #servicios {
     padding: 40px 0; /* Espaciado superior e inferior */
@@ -157,20 +154,24 @@ p {
 
 #servicios .card {
     border: none; /* Elimina el borde de las tarjetas */
-    transition: transform 0.3s;
     max-width: 80%; /* Ajusta el tamaño máximo de las tarjetas */
     background-color: transparent; /* Hace que el fondo de las tarjetas sea transparente */
     margin: 0 auto; /* Centra las tarjetas en la pantalla */
+    transition: none; /* Elimina la transición para hover */
 }
 
 #servicios .card:hover {
-    transform: scale(1.05); /* Efecto hover para las tarjetas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+    transform: none; /* Elimina la transformación en hover */
+    box-shadow: none; /* Elimina la sombra al hacer hover */
 }
 
-#servicios .card-img-top {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-    height: auto; /* Mantiene la proporción original de la imagen */
+/* Video en servicios */
+.video-servicio {
+    background-color: transparent; /* Fondo transparente para los videos */
+    border: none; /* Elimina cualquier borde del video */
+    width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+    display: block; /* Asegura que se muestre como bloque */
 }
 
 @media (max-width: 768px) {
@@ -182,6 +183,7 @@ p {
         font-size: 1rem; /* Tamaño del párrafo ajustado para pantallas más pequeñas */
     }
 }
+
 
 /*-------------------------------------------------------------------------------*/
 /*Sección actualizado*/
@@ -443,11 +445,6 @@ p {
 #redes .social-icon:hover {
     transform: scale(1.1); /* Efecto de aumento al pasar el mouse por encima */
 }
-
-
-
-
-
 
 /*-------------------------------------------------------------------------------*/
 /* Sección Contacto */
