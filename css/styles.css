@@ -107,7 +107,7 @@ p {
 #inicio {
     background: none; /* Sin fondo específico */
     padding: 40px 0; /* Espaciado superior e inferior */
-    text-align: left;
+    text-align: center;
 }
 
 #inicio h1 {
@@ -141,14 +141,14 @@ p {
 #servicios h2 {
     font-size: 2.3rem; /* Tamaño del h2 igual al h1 de la sección inicio */
     font-weight: 600; /* Peso del h2 */
-    text-align: left; /* Alineado a la izquierda */
+    text-align: center; /* Alineado a la izquierda */
     margin-bottom: 1rem; /* Espacio inferior */
 }
 
 #servicios p {
     font-size: 1.2rem; /* Tamaño del párrafo igual al de la sección inicio */
     font-weight: 400; /* Peso del párrafo */
-    text-align: left; /* Alineado a la izquierda */
+    text-align: center; /* Alineado a la izquierda */
     margin-bottom: 2rem; /* Espacio inferior */
 }
 
@@ -255,16 +255,18 @@ p {
 
 #nosotros .card {
     position: relative;
-    border: none;
-    transition: transform 0.3s;
+    border: none; /* Elimina el borde de las tarjetas */
     background-color: transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     height: 100%;
+    transition: none; /* Elimina cualquier transición para hover */
+    border-radius: 0 !important;
 }
 
 #nosotros .card:hover {
-    transform: scale(1.05);
+    transform: none; /* Elimina la transformación (zoom) al pasar el mouse */
+    box-shadow: none; /* Opcional: Elimina la sombra al hacer hover */
 }
 
 /* Efecto persiana en imágenes y videos */
@@ -301,6 +303,7 @@ p {
     margin: 0;
     padding: 0;
     z-index: 1;
+    border-radius: 0 !important; /* Asegura que las imágenes y videos no tengan bordes redondeados */
 }
 
 #nosotros .card-body {
@@ -326,6 +329,7 @@ p {
     }
 }
 
+
 /*-------------------------------------------------------------------------------*/
 /* Sección Nuestro Equipo */
 
@@ -334,7 +338,8 @@ p {
     font-weight: 600;
     color: #333;
     margin-bottom: 20px;
-    text-align: left; /* Alinea el h2 a la izquierda */
+    text-align: center; /* Alinea el h2 a la izquierda */
+
 }
 
 #equipo p {
@@ -342,7 +347,7 @@ p {
     font-weight: 400;
     color: #666;
     margin-bottom: 20px; /* Espaciado inferior adecuado para separar del contenido */
-    text-align: left; /* Alinea el párrafo a la izquierda */
+    text-align: center; /* Alinea el párrafo a la izquierda */
 }
 
 #equipo .cards-container {
@@ -421,17 +426,20 @@ p {
     font-size: 2.0rem; /* Ajusta el tamaño del h3 */
     font-weight: 400;
     color: #333;
+    text-align: center;
 }
 
 #redes h4 {
     font-size: 3rem; /* Ajusta el tamaño del h4 */
     font-weight: 600;
     color: #555;
+    text-align: center;
 }
 
 #redes p {
     font-size: 1.5rem;
     color: #666;
+    text-align: center;
 }
 
 #redes .social-icon {
@@ -453,14 +461,16 @@ p {
     font-size: 2.5rem;
     font-weight: 600;
     color: #333;
-    margin-bottom: 20px;
+    margin-top: 40px; /* Ajusta el margen superior */
+    margin-bottom: 0px !important; /* Ajusta el margen inferior */
 }
 
 #contacto h3 {
     font-size: 1.8rem;
     font-weight: 400;
     color: #555;
-    margin-bottom: 30px;
+    margin-top: 0 !important; /* Ajusta el margen superior */
+    margin-bottom: 40px !important; /* Ajusta el margen inferior */
 }
 
 #contact-form .form-group {
@@ -509,13 +519,14 @@ p {
     font-weight: 600;
     color: #333;
     margin-left: 120px;
+    text-align: center;
 }
 
 #donde-estamos p {
     font-size: 1.2rem;
     font-weight: 400;
     color: #555;
-    text-align: right; /* Alineación a la derecha para que esté en línea con el h2 */
+    text-align: center; /* Alineación a la derecha para que esté en línea con el h2 */
     margin: 0; /* Sin margen para alinear con el h2 */
 }
 
