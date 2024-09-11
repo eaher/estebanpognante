@@ -359,7 +359,6 @@ color: #FAFAFA;
 #equipo .cards-container {
     background-color: #E8E6E6 !important; /* Cambia este valor por el color de fondo deseado */
     padding: 20px; /* Ajusta el espaciado interno */
-    border-radius: 10px; /* Opcional: Añade un borde redondeado */
     margin-left: 10px; /* Margen izquierdo de 10px */
     margin-right: 10px; /* Margen derecho de 10px */
 }
@@ -369,6 +368,7 @@ color: #FAFAFA;
     transition: transform 0.3s ease-in-out; /* Suaviza el efecto de transformación */
     position: relative; /* Asegura que el contenido superpuesto se posicione correctamente */
     overflow: hidden; /* Evita que el contenido salga del borde de la tarjeta */
+    border-radius: 0 !important;
 }
 
 #equipo .card:hover {
@@ -380,7 +380,8 @@ color: #FAFAFA;
     width: 100%;
     height: auto; /* Asegura que la imagen mantenga su proporción */
     object-fit: cover; /* Cubre todo el espacio del contenedor de la tarjeta */
-    border-radius: 5px; /* Añade un pequeño redondeo a las esquinas */
+    border-radius: 0 !important;
+    
 }
 
 #equipo .overlay {
@@ -391,6 +392,7 @@ color: #FAFAFA;
     background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
     padding: 10px; /* Espaciado interno */
     text-align: left; /* Alineación del texto */
+    border-radius: 0 !important;
 }
 
 #equipo .overlay h3 {
